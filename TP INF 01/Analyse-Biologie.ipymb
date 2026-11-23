@@ -1,0 +1,34 @@
+print("Bonjour à tous les biologistes !")
+nom = "Biologie"
+annee = 2026
+
+print(nom)
+print(annee)
+import numpy as np
+
+heures = np.array([0, 1, 2, 3, 4, 5])
+
+cellules = np.array([100, 150, 210, 300, 430, 600])
+
+print("Heures :", heures)
+print("Cellules :", cellules)
+import numpy as np
+import matplotlib.pyplot as plt
+
+print("Bonjour à tous les biologistes !")
+
+heures = np.array([0, 1, 2, 3, 4, 5])
+cellules = np.array([100, 150, 210, 300, 430, 600])
+
+print("Heures :", heures)
+print("Cellules :", cellules)
+
+croissance_moyenne = np.mean(np.diff(cellules))
+print("Croissance moyenne :", croissance_moyenne)
+
+plt.plot(heures, cellules, marker="o", color="green")
+plt.title("Croissance cellulaire au fil du temps")
+plt.xlabel("Temps (heures)")
+plt.ylabel("Nombre de cellules")
+plt.grid(True)
+plt.show()
